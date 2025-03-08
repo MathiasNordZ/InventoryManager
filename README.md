@@ -9,6 +9,7 @@ The project is written in Java 21, with the support of JavaFX and Maven. For ser
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
+├── products.json
 ├── src
 │   └── main
 │       ├── java
@@ -17,13 +18,18 @@ The project is written in Java 21, with the support of JavaFX and Maven. For ser
 │       │       └── ntnu
 │       │           └── mathieno
 │       │               └── inventorymanager
-│       │                   └── Product.java
+│       │                   ├── InvalidStringException.java
+│       │                   ├── JsonHandler.java
+│       │                   ├── MainApplication.java
+│       │                   ├── Product.java
+│       │                   └── Sandbox.java
 │       └── resources
 │           └── no
 │               └── ntnu
 │                   └── mathieno
 │                       └── inventorymanager
-│                           └── hello-view.fxml
+│                           ├── hello-view.fxml
+│                           └── products.json
 └── target
     ├── classes
     │   ├── module-info.class
@@ -31,16 +37,15 @@ The project is written in Java 21, with the support of JavaFX and Maven. For ser
     │       └── ntnu
     │           └── mathieno
     │               └── inventorymanager
+    │                   ├── InvalidStringException.class
+    │                   ├── JsonHandler.class
+    │                   ├── MainApplication.class
     │                   ├── Product.class
-    │                   └── hello-view.fxml
-    ├── generated-sources
-    │   └── annotations
-    └── maven-status
-        └── maven-compiler-plugin
-            └── compile
-                └── default-compile
-                    ├── createdFiles.lst
-                    └── inputFiles.lst
+    │                   ├── Sandbox.class
+    │                   ├── hello-view.fxml
+    │                   └── products.json
+    └── generated-sources
+        └── annotations
 
 ```
 ## How to run
