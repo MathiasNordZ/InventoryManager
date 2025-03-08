@@ -3,13 +3,14 @@ package no.ntnu.mathieno.inventorymanager;
 import com.google.gson.annotations.Expose;
 
 /**
-* Class that represents a product stored in the inventory.
-*
-* @author Mathias Erik Nord
-* @since 08.03.2025
-* @version 0.0.1
-*/
+ * Class that represents a product stored in the inventory.
+ *
+ * @author Mathias Erik Nord
+ * @version 0.0.1
+ * @since 08.03.2025
+ */
 public class Product {
+
   @Expose
   private String productName;
   @Expose
@@ -20,9 +21,9 @@ public class Product {
   /**
    * Constructor that will set the product name, category and quantity.
    *
-   * @param productName name of the product.
+   * @param productName     name of the product.
    * @param productCategory category of the product.
-   * @param quantity quantity of the product.
+   * @param quantity        quantity of the product.
    */
   public Product(String productName, String productCategory, int quantity) {
     setProductName(productName);
@@ -40,7 +41,7 @@ public class Product {
   }
 
   /**
-   * Mutator method for {@code productName}
+   * Mutator method for {@code productName}.
    *
    * @param productName the product name.
    */

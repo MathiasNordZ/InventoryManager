@@ -15,14 +15,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
-* Class to handle CRUD operations related to JSON files.
-*
-* @author Mathias Erik Nord
-* @since 08.03.2025
-* @version 0.0.1
-*/
+ * Class to handle CRUD operations related to JSON files.
+ *
+ * @author Mathias Erik Nord
+ * @version 0.0.1
+ * @since 08.03.2025
+ */
 public class JsonHandler {
-  private static final String FILE_PATH = "src/main/resources/no/ntnu/mathieno/inventorymanager/products.json";
+
+  private static final String FILE_PATH = "src/main/resources/no/ntnu"
+      + "/mathieno/inventorymanager/products.json";
   private final Gson gson;
   private List<Product> products;
   private final Logger logger = Logger.getLogger(JsonHandler.class.getName());
@@ -76,7 +78,7 @@ public class JsonHandler {
   /**
    * Method to update the quantity of a product.
    *
-   * @param name name of the product.
+   * @param name        name of the product.
    * @param newQuantity the new quantity of the product.
    * @return true if product is updated, false if not found.
    */
@@ -97,7 +99,7 @@ public class JsonHandler {
   /**
    * Method to update the category of a product.
    *
-   * @param name name of product.
+   * @param name        name of product.
    * @param newCategory the new category of product.
    * @return true if updated, else false.
    */
@@ -118,7 +120,7 @@ public class JsonHandler {
   /**
    * Method to update the name of a product.
    *
-   * @param name old name of product.
+   * @param name    old name of product.
    * @param newName new name of product.
    * @return true if updated, false if not.
    */
@@ -149,7 +151,8 @@ public class JsonHandler {
 
     try (FileReader fileReader = new FileReader(file)) {
       logger.log(Level.INFO, "Loading from JSON file.");
-      Type productListType = new TypeToken<ArrayList<Product>>(){}.getType();
+      Type productListType = new TypeToken<ArrayList<Product>>() {
+      }.getType();
       products = gson.fromJson(fileReader, productListType);
 
       if (products == null) {

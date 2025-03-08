@@ -1,6 +1,7 @@
 package no.ntnu.mathieno.inventorymanager;
 
 public class Sandbox {
+
   public static void main(String[] args) {
     JsonHandler jsonHandler = new JsonHandler();
 
