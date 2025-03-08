@@ -1,5 +1,7 @@
 package no.ntnu.mathieno.inventorymanager;
 
+import com.google.gson.annotations.Expose;
+
 /**
 * Class that represents a product stored in the inventory.
 *
@@ -8,8 +10,11 @@ package no.ntnu.mathieno.inventorymanager;
 * @version 0.0.1
 */
 public class Product {
+  @Expose
   private String productName;
+  @Expose
   private String productCategory;
+  @Expose
   private int quantity;
 
   /**
