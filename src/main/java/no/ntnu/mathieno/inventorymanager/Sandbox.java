@@ -1,5 +1,8 @@
 package no.ntnu.mathieno.inventorymanager;
 
+import no.ntnu.mathieno.inventorymanager.backend.entity.Product;
+import no.ntnu.mathieno.inventorymanager.backend.filehandling.JsonHandler;
+
 public class Sandbox {
 
   public static void main(String[] args) {

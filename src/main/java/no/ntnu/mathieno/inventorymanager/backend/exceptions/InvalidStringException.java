@@ -1,4 +1,4 @@
-package no.ntnu.mathieno.inventorymanager;
+package no.ntnu.mathieno.inventorymanager.backend.exceptions;
 
 /**
  * Custom exception class that will be thrown if a string is invalid.

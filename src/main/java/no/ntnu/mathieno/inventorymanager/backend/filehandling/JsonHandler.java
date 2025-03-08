@@ -1,4 +1,4 @@
-package no.ntnu.mathieno.inventorymanager;
+package no.ntnu.mathieno.inventorymanager.backend.filehandling;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import no.ntnu.mathieno.inventorymanager.backend.entity.Product;
+import no.ntnu.mathieno.inventorymanager.backend.exceptions.InvalidStringException;
 
 /**
  * Class to handle CRUD operations related to JSON files.

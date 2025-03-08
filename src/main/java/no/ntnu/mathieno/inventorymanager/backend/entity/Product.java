@@ -1,4 +1,4 @@
-package no.ntnu.mathieno.inventorymanager;
+package no.ntnu.mathieno.inventorymanager.backend.entity;
 
 import com.google.gson.annotations.Expose;
 
