@@ -1,4 +1,4 @@
-package no.ntnu.mathieno.inventorymanager.backend.entity;
+package no.ntnu.mathieno.inventorymanager.backend.models;
 
 import com.google.gson.annotations.Expose;
 
@@ -29,6 +29,10 @@ public class Product {
     setProductName(productName);
     setProductCategory(productCategory);
     setQuantity(quantity);
+  }
+
+  public Product() {
+
   }
 
   /**

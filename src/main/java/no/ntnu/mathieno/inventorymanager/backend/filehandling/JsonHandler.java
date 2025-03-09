@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import no.ntnu.mathieno.inventorymanager.backend.entity.Product;
+import no.ntnu.mathieno.inventorymanager.backend.models.Product;
 import no.ntnu.mathieno.inventorymanager.backend.exceptions.InvalidStringException;
 
 /**
